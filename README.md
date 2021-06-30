@@ -1,3 +1,3 @@
 # PhoneConcerts
-Web/Android Application
+Web/Android Application.
 Check master branch for code :)
