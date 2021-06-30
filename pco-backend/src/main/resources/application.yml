@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_pco
+    username: springuser
+    password: :Th3@S3cr3t!
+
+#  jpa:
+#    hibernate:
+#      ddl-auto: validate
+    # Log JPA queries
+    # Comment this in production
+#    show-sql: true
+
+# todo. these properties are not used at the moment. Use them.
+pco:
+  auth:
+    google:
+      client-id: 780688930889-dbi3noc424jo4a89luien2b8fjukbctg.apps.googleusercontent.com
+      secret: u3-sQbbAie8pRRM4E-NR5d6D

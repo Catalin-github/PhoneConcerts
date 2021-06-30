@@ -1,0 +1,6 @@
+export const LOGIN_REQUEST = "LOGIN_REQUEST";
+export const LOGIN_SUCCES = "LOGIN_SUCCES";
+export const LOGIN_ERROR = "LOGIN_ERROR";
+export const EDIT_PROFILE = "EDIT_PROFILE";
+export const CONCERT_LIST="CONCERT_LIST"
+export const RESET_VALIDATION="RESET_VALIDATION"

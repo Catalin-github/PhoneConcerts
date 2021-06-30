@@ -1,0 +1,615 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.image-resize {
+  height: 36px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+/***for all components***/
+.mainPageDivs {
+  position: relative;
+  left: 41%;
+  width: 50%;
+  max-width: 550px;
+  padding-top: 100px;
+}
+
+.mainPageDivsConcert {
+  position: relative;
+  left: 37%;
+  width: 50%;
+  max-width: 550px;
+  padding-top: 100px;
+}
+.pageTitle {
+  left: calc(50% - 150px / 2 + 1.5px);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.appMainMessages {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.formButtons {
+  height: 51px;
+  width: 80%;
+  max-width: 343px;
+  margin-top: 5px;
+  left: 541px;
+  top: 643px;
+  border-radius: 100px;
+  background: #ef456e;
+  color: #ffffff;
+}
+
+.formButtons:hover {
+  color: #ffffff;
+}
+
+.checkboxMessages {
+  height: 34px;
+  width: 65%;
+  max-width: 320px;
+  left: 24px;
+}
+
+.formLabel {
+  height: 34px;
+  width: 80%;
+  max-width: 320px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
+}
+
+/*Login & Register Components*/
+/* .socialLoginButtonsDiv {
+}
+
+.socialLoginButton {
+} */
+
+.Inputs {
+  height: 50px;
+  width: 80%;
+  min-width: 50px;
+  max-width: 340px;
+  margin: 2px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding-left: 8px;
+  background: #f6f6f6;
+  position: relative;
+}
+
+.passwordInputs {
+  height: 49px;
+  width: 100%;
+  min-width: 50px;
+  max-width: 340px;
+  position: relative;
+  border: 0 solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding-left: 8px;
+  background: #f6f6f6;
+}
+
+.passwordInputDiv {
+  position: relative;
+  width: 50%;
+  min-width: 50px;
+  max-width: 343px;
+  max-height: 52px;
+  margin: 2px auto;
+  background: #f6f6f6;
+  text-align: left;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.confirmPassDiv {
+  position: relative;
+  width: 80%;
+  min-width: 50px;
+  max-width: 343px;
+  max-height: 52px;
+  margin: 4px auto 2px;
+  background: #f6f6f6;
+  text-align: left;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.showPasswordToggle {
+  position: absolute;
+  right: 1.5%;
+  top: 10px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #bdbdbd;
+  background: #f6f6f6;
+}
+
+.validationError {
+  display: absolute;
+  color: #db2269;
+  font-size: 0.625em;
+}
+
+/*Register Component*/
+.newsletterCheckboxReg {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  bottom: 20px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+
+/**Language Buttons**/
+.lang-buttons {
+  margin: 0px 1% 0px;
+}
+
+/*DashboardComponent*/
+.dashCMainDiv {
+  text-align: center;
+  width: 75%;
+  max-width: 550px;
+  margin: 0px auto;
+}
+
+.dashCTitleDiv {
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  margin-top: 100px;
+}
+
+.welcomeMessageDashC {
+  position: absolute;
+  top: 11px;
+  font-size: 17px;
+  height: 20px;
+  max-height: 50px;
+  max-width: 70px;
+  text-align: left;
+}
+
+.pageTitleDashC {
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.logoutButtonDashC {
+  font-size: 17px;
+  position: absolute;
+  height: 25px;
+  max-height: 55px;
+  right: 0%;
+  top: 6px;
+  border: 0px;
+  text-align: right;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  color: #666666;
+  background-color: #ffffff;
+}
+
+/**ConcertList**/
+.concertData {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 3rem 1rem 1rem;
+}
+
+.concertThumbnail {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 7px;
+  left: 0%;
+}
+
+.concertName_Description {
+  width: 70%;
+  max-width: 300px;
+  min-width: 170px;
+  position: relative;
+  left: 21%;
+  top: 10%;
+}
+
+.concertName {
+  height: 19px;
+  width: 95%;
+  position: absolute;
+  margin: 0px auto;
+  /* top: 67%; */
+  /* bottom: 10%; */
+  /* left: 17%; */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: #000000;
+}
+
+.concertDescriptionDiv {
+  height: 20%;
+  width: 100%;
+  position: relative;
+  top: 37px;
+}
+
+.concertDescription {
+  text-align: left;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 100px;
+}
+
+.concertDate {
+  position: absolute;
+  width: 48px;
+  height: 19px;
+  top: 37%;
+  /* bottom: -30.5%; */
+  right: 0%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #bdbdbd;
+}
+
+/**overflow things**/
+.overflowDescription {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  overflow: auto;
+}
+
+/*Concert Component*/
+.conCTitleDiv {
+  position: relative;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.backButtonConC {
+  position: absolute;
+  width: 38px;
+  height: 19px;
+  left: 13%;
+  border-radius: nullpx;
+}
+
+.concertViewConC {
+  /* position: relative;
+  width: 30%;*/
+  padding-top: 5%;
+  margin-bottom: 3%;
+  margin: 0px auto;
+}
+
+.iframeDiv {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 20.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.concertNameConC {
+  position: relative;
+  margin: 0px auto;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.shareButton {
+  position: absolute;
+  width: 4%;
+  height: 19px;
+  right: 15%;
+  margin: 0px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* text-align: right; */
+  cursor: pointer;
+  border: 0px;
+  background: #ffffff;
+  color: #ef456e;
+}
+
+.shareButtonText {
+  margin-top: 4.8%;
+  margin-left: 10%;
+  color: #ffffff;
+}
+
+.shareWindow {
+  position: absolute;
+  text-align: right;
+  right: 0px;
+  top: -65px;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px;
+  width: 200px;
+  height: 10px;
+  border-radius: 13px;
+  height: 25px;
+}
+
+.icons {
+  list-style-type: none;
+  display: flex;
+  margin-right: 54%;
+  margin-top: 13%;
+}
+
+.socialIcon {
+  margin: 0px 7px;
+}
+
+.closeIcon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 13px;
+  top: 34%;
+}
+
+/**puse de Sami**/
+/*nu am comentat/rezolvat warning-urile că nu știu ce folosește sau nu*/
+
+input.error {
+  border: 1px solid #eadae4;
+}
+
+/*MissingRouteError*/
+.error-page {
+  height: 100vh;
+  left: 30%;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 200px;
+  text-shadow: 2px 4px 5px #192fac;
+  background-color: #000000f3;
+  color: #db2269;
+}
+
+/** The container for show password toggle **/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/** Hide the browser's default checkbox **/
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/** Create a custom checkbox **/
+.checkmark {
+  background-image: url("https://img.icons8.com/material-sharp/20/000000/visible.png");
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -35px;
+  left: 85%;
+  height: 20px;
+  width: 20px;
+}
+
+/** On mouse-over, add a grey background color **/
+.container:hover input ~ .checkmark {
+  height: 22px;
+}
+
+/** When the checkbox is checked, add a blue background **/
+.container input:checked ~ .checkmark {
+  background-image: url("https://img.icons8.com/material-outlined/20/000000/invisible.png");
+}
+
+/*Homepage Component*/
+.homepage {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1001px) {
+  .rez {
+    width: 960;
+    height: 576;
+  }
+}
+@media (max-width: 1000px) {
+  .rez {
+    width: 640;
+    height: 396;
+  }
+}
+
+@media (max-width: 500px) {
+  .rez {
+    width: 480;
+    height: 306;
+  }
+  .mainPageDivs {
+    position: relative;
+    left: 31%;
+    width: 50%;
+    max-width: 550px;
+    padding-top: 100px;
+  }
+}
+*/ .iframeDiv {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.poza {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  padding-top: 100%;
+  width: 30%;
+  max-width: 323px;
+  background-image: url(./images/background.png);
+  background-color: #4a4e69;
+  background-attachment: fixed;
+
+  display: inline-block;
+  white-space: nowrap;
+  /* background-size: cover; */
+}
+/* ///////////////////////////////////
+ */
+
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+ 
+
+ .loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+.loginBtn--google:before {
+  border-right: #BB3F30 1px solid;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
+}
